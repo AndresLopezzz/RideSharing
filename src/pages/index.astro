@@ -1,0 +1,222 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Hero from "../components/Hero.astro";
+import Features from "../components/Features.astro";
+---
+
+<Layout title="Ride-Sharing">
+  <Header />
+  <main>
+    <div class="main-gradient"></div>
+    <div class="hero-wrap">
+      <Hero />
+    </div>
+    <div class="features-wrap">
+      <Features />
+    </div>
+  </main>
+</Layout>
+
+<style is:global>
+  /* Black */
+  @font-face {
+    font-family: "Graphik";
+    src: url("/fonts/GraphikBlack.otf") format("woff");
+    font-weight: 900;
+  }
+
+  /* Black Italic */
+  @font-face {
+    font-family: "Graphik";
+    src: url("/fonts/GraphikBlackItalic.otf") format("woff");
+    font-weight: 900;
+    font-style: italic;
+  }
+
+  /* Bold */
+  @font-face {
+    font-family: "Graphik";
+    src: url("/fonts/GraphikBold.otf") format("woff");
+    font-weight: 700;
+  }
+
+  /* Bold Italic */
+  @font-face {
+    font-family: "Graphik";
+    src: url("/fonts/GraphikBoldItalic.otf") format("woff");
+    font-weight: 700;
+    font-style: italic;
+  }
+
+  /* Extralight */
+  @font-face {
+    font-family: "Graphik";
+    src: url("/fonts/GraphikExtralight.otf") format("woff");
+    font-weight: 200;
+  }
+
+  /* Extralight Italic */
+  @font-face {
+    font-family: "Graphik";
+    src: url("/fonts/GraphikExtralightItalic.otf") format("woff");
+    font-weight: 200;
+    font-style: italic;
+  }
+
+  /* Light */
+  @font-face {
+    font-family: "Graphik";
+    src: url("/fonts/GraphikLight.otf") format("woff");
+    font-weight: 300;
+  }
+
+  /* Light Italic */
+  @font-face {
+    font-family: "Graphik";
+    src: url("/fonts/GraphikLightItalic.otf") format("woff");
+    font-weight: 300;
+    font-style: italic;
+  }
+
+  /* Medium */
+  @font-face {
+    font-family: "Graphik";
+    src: url("/fonts/GraphikMedium.otf") format("woff");
+    font-weight: 500;
+  }
+
+  /* Medium Italic */
+  @font-face {
+    font-family: "Graphik";
+    src: url("/fonts/GraphikMediumItalic.otf") format("woff");
+    font-weight: 500;
+    font-style: italic;
+  }
+
+  /* Regular */
+  @font-face {
+    font-family: "Graphik";
+    src: url("/fonts/GraphikRegular.otf") format("woff");
+    font-weight: 400;
+  }
+
+  /* Regular Italic */
+  @font-face {
+    font-family: "Graphik";
+    src: url("/fonts/GraphikRegularItalic.otf") format("woff");
+    font-style: italic;
+  }
+
+  /* Semibold */
+  @font-face {
+    font-family: "Graphik";
+    src: url("/fonts/GraphikSemibold.otf") format("woff");
+    font-weight: 600;
+  }
+
+  /* Semibold Italic */
+  @font-face {
+    font-family: "Graphik";
+    src: url("/fonts/GraphikSemiboldItalic.otf") format("woff");
+    font-weight: 600;
+    font-style: italic;
+  }
+
+  /* Super */
+  @font-face {
+    font-family: "Graphik";
+    src: url("/fonts/GraphikSuper.otf") format("woff");
+    font-weight: 800;
+  }
+
+  /* Super Italic */
+  @font-face {
+    font-family: "Graphik";
+    src: url("/fonts/GraphikSuperItalic.otf") format("woff");
+    font-weight: 800;
+    font-style: italic;
+  }
+
+  /* Thin */
+  @font-face {
+    font-family: "Graphik";
+    src: url("/fonts/GraphikThin.otf") format("woff");
+    font-weight: 100;
+  }
+
+  /* Thin Italic */
+  @font-face {
+    font-family: "Graphik";
+    src: url("/fonts/GraphikThinItalic.otf") format("woff");
+    font-weight: 100;
+    font-style: italic;
+  }
+
+  * {
+    font-family: "Graphik", sans-serif;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    height: 2000px;
+    overflow-x: hidden;
+  }
+
+  .main-gradient {
+    z-index: 0;
+    background-image: linear-gradient(rgba(205, 182, 252, 0.4) 65%, #ffffff),
+      radial-gradient(circle at 10%, rgb(255, 255, 255), rgba(255, 255, 255, 0)),
+      radial-gradient(
+        circle at 90% -10%,
+        #3f198a,
+        #cdb6fc 39%,
+        /* Ajusta la ubicación del color */ rgba(255, 255, 255, 0) 89%
+      );
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    bottom: auto;
+    left: 0%;
+    right: 0%;
+  }
+
+  .features-wrap {
+    animation: fade 3s cubic-bezier(0.16, 0.68, 0.34, 0.87) both;
+    animation-timeline: view();
+    animation-range: entry 50% cover 50%;
+  }
+
+  @keyframes fade {
+    0% {
+      opacity: 0;
+      transform: scale(0.8);
+      filter: blur(2px);
+    }
+    50% {
+      opacity: 0.8;
+      transform: scale(1);
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .hero-wrap {
+    z-index: 1;
+    animation: fade-out linear forwards;
+    animation-timeline: view();
+    animation-range: exit;
+    top: 0px;
+  }
+
+  @keyframes fade-out {
+    100% {
+      opacity: 0;
+      transform: scale(1.5);
+      padding-bottom: 100px;
+      filter: blur(3px);
+    }
+  }
+</style>
