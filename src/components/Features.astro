@@ -75,13 +75,54 @@
         </div>
       </div>
       <div class="half-side">
-        <div class="screenshot-wrap">
+        <div class="screenshot-wrap 2">
           <img
-            src="imgs/MockupApp.jpg"
+            src="imgs/MockupApp.png"
+            loading="lazy"
             loading="lazy"
             alt=""
             class="screenshot"
           />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section less-top">
+    <div class="container flex mob-switch">
+      <div class="half-side img">
+        <div class="screenshot-wrap left">
+          <div></div>
+          <img
+            src="imgs/MockupApp.png"
+            loading="lazy"
+            alt=""
+            class="screenshot left"
+          />
+        </div>
+      </div>
+      <div class="half-side right">
+        <div class="div-block-11">
+          <div class="label">Seguridad</div>
+          <div class="section-heading">
+            Viaja con confianza de quienes te acompañan
+          </div>
+          <div class="section-subheading">
+            Gracias al respaldo de las instituciones universitarias y del
+            sistema de verificación, la seguridad vial ha alcanzado niveles sin
+            precedentes. Los conductores, quienes son estudiantes como usted,
+            son rigurosamente verificados mediante la validación de su identidad
+            estudiantil y gubernamental.
+          </div>
+          <div class="animation-conection-wrap">
+            <div class="universidad logoA">
+              <img src="imgs/logo_cuc.png" alt="" />
+            </div>
+            <div class="line"></div>
+            <div class="outlook logoA"></div>
+            <div class="gobierno logoA"></div>
+            <div class="security logoA"></div>
+          </div>
         </div>
       </div>
     </div>
@@ -101,8 +142,9 @@
   }
 
   .section.overflow {
+    margin-top: 20px;
     padding-top: 124px;
-    padding-bottom: 124px;
+    padding-bottom: 0px;
     overflow: hidden;
     z-index: 0;
     background-image: radial-gradient(
@@ -237,5 +279,74 @@
     right: 0%;
     overflow: hidden;
     box-shadow: 0 11px 40px -5px rgba(75, 32, 19, 0.19);
+  }
+
+  .container.flex.mob-switch {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 1300px;
+  }
+
+  .screenshot-wrap.left {
+    height: 880px;
+    left: -4%;
+  }
+
+  .screenshot.left {
+    display: flex;
+    position: relative;
+    left: -45%;
+    right: 0;
+    bject-position: 40% 50%;
+    border-radius: 10px;
+    max-width: 940px;
+    height: auto;
+    min-height: 0;
+    max-height: none;
+    margin-right: 0;
+    padding-right: 0;
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: -38%;
+    right: 0;
+    box-shadow: 0 11px 40px -5px rgba(75, 32, 19 0.19);
+  }
+  .div-block-11 {
+    margin-left: 100px;
+    animation: fade-in 1s cubic-bezier(0.48, 0.03, 0.79, 0.66) both;
+    animation-timeline: view();
+    animation-range: entry 90% cover 50%;
+    background-image: radial-gradient(
+      circle closest-side at 20% 35%,
+      var(--light-purple) 20%,
+      #ffffff 100%
+    );
+  }
+
+  .half-side.img {
+  }
+
+  img {
+    vertical-align: middle;
+    display: inline-block;
+  }
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+      padding-top: 50px;
+    }
+    100$ {
+      opacity: 1;
+      padding-top: 0px;
+    }
+  }
+
+  .universidad.logoA img {
+    width: 140px;
+    height: auto;
   }
 </style>

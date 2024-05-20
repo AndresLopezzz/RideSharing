@@ -5,12 +5,13 @@ console.log("javascript");
 <header>
   <div class="nav-menu">
     <div class="logo-nav">
-      <img src="/imgs/logoV2.png" alt="" />
+      <img src="/New-logo.svg" alt="" />
+      <p>RideSharing</p>
     </div>
     <div class="mid-nav">
+      <span><a href="#">Start</a></span>
       <span><a href="#features">Features</a></span>
-      <span><a href="#">Testimonials</a></span>
-      <span>Pricing</span>
+      <span>About us</span>
       <span>FAQ</span>
     </div>
     <div class="links-nav">
@@ -34,16 +35,45 @@ console.log("javascript");
 
   header {
     padding: 6px 4px 6px 4px;
-    margin: 10px;
+    margin: 10px 450px 10px 450px;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: fixed;
-    width: calc(100% - 900px);
+    position: relative;
+    width: 90;
     top: 0;
     z-index: 1000;
-    left: 450px;
-    right: 450px;
+  }
+
+  .logo-nav {
+    margin-left: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--dark-purple);
+    font-weight: 400;
+    font-size: 1;
+  }
+
+  .logo-nav p {
+    padding-left: 8px;
+    text-shadow: 0px 4px 12px var(--purple);
+  }
+
+  .logo-nav img {
+    width: 48px;
+    height: auto;
+    filter: drop-shadow(0px 4px 12px var(--purple));
+  }
+
+  .nav-menu {
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    position: fixed;
+    top: 10px;
+    padding: 6px 4px 6px 4px;
     background: linear-gradient(
       135deg,
       rgba(255, 255, 255, 0.1),
@@ -55,22 +85,6 @@ console.log("javascript");
     border: 1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     animation: appear 5s cubic-bezier(0.18, 0.79, 0.33, 0.98);
-  }
-
-  .logo-nav {
-    margin-left: 8px;
-  }
-
-  .logo-nav img {
-    width: 150px;
-    height: auto;
-  }
-
-  .nav-menu {
-    flex: 1;
-    justify-content: space-between;
-    align-items: center;
-    display: flex;
   }
 
   .mid-nav {

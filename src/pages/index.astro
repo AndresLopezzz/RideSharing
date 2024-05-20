@@ -3,6 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
 import Hero from "../components/Hero.astro";
 import Features from "../components/Features.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <Layout title="Ride-Sharing">
@@ -16,6 +17,7 @@ import Features from "../components/Features.astro";
       <Features />
     </div>
   </main>
+  <Footer />
 </Layout>
 
 <style is:global>
@@ -205,7 +207,7 @@ import Features from "../components/Features.astro";
   }
   .hero-wrap {
     z-index: 1;
-    animation: fade-out linear forwards;
+    animation: fade-out 1s linear forwards;
     animation-timeline: view();
     animation-range: exit;
     top: 0px;
