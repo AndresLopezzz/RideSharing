@@ -1,5 +1,5 @@
 ---
-
+import { AnimatedBeamDemo } from "./relations.tsx";
 ---
 
 <main id="features">
@@ -30,8 +30,10 @@
                     fill="currentColor"></path>
                 </svg>
               </div>
-            </div><h3 class="feature-heading">
-              En cualquier direccion que estés<br />
+            </div>
+            <h3 class="feature-heading">
+              En cualquier direccion que estés
+              <br />
             </h3>
           </div>
           <div class="feature-block">
@@ -49,8 +51,10 @@
                     fill="currentColor"></path>
                 </svg>
               </div>
-            </div><h3 class="feature-heading">
-              Elige el conductor cuya ruta más te sirva y esté disponible<br />
+            </div>
+            <h3 class="feature-heading">
+              Elige el conductor cuya ruta más te sirva y esté disponible
+              <br />
             </h3>
           </div>
           <div class="feature-block">
@@ -68,8 +72,10 @@
                     fill="currentColor"></path>
                 </svg>
               </div>
-            </div><h3 class="feature-heading">
-              Espera tranquilamente tu ida a la u sin preocupaciones<br />
+            </div>
+            <h3 class="feature-heading">
+              Espera tranquilamente tu ida a la u sin preocupaciones
+              <br />
             </h3>
           </div>
         </div>
@@ -77,8 +83,7 @@
       <div class="half-side">
         <div class="screenshot-wrap 2">
           <img
-            src="imgs/MockupApp.png"
-            loading="lazy"
+            src="imgs/MockupWeb2.jpg"
             loading="lazy"
             alt=""
             class="screenshot"
@@ -94,7 +99,7 @@
         <div class="screenshot-wrap left">
           <div></div>
           <img
-            src="imgs/MockupApp.png"
+            src="imgs/MockupWeb.jpg"
             loading="lazy"
             alt=""
             class="screenshot left"
@@ -114,239 +119,226 @@
             son rigurosamente verificados mediante la validación de su identidad
             estudiantil y gubernamental.
           </div>
-          <div class="animation-conection-wrap">
-            <div class="universidad logoA">
-              <img src="imgs/logo_cuc.png" alt="" />
-            </div>
-            <div class="line"></div>
-            <div class="outlook logoA"></div>
-            <div class="gobierno logoA"></div>
-            <div class="security logoA"></div>
-          </div>
+          <div id="aniDiv"><AnimatedBeamDemo client:load /></div>
         </div>
       </div>
     </div>
-  </div>
-</main>
 
-<style>
-  :root {
-    /*
+    <style>
+      :root {
+        /*
     Colores RideSharing
     */
-    --darkest-text: #1d1d1d;
+        --darkest-text: #1d1d1d;
 
-    --purple: #5d17eb;
-    --dark-purple: #350d85;
-    --light-purple: #d3c2f6;
-  }
+        --purple: #5d17eb;
+        --dark-purple: #350d85;
+        --light-purple: #d3c2f6;
+      }
 
-  .section.overflow {
-    margin-top: 20px;
-    padding-top: 124px;
-    padding-bottom: 0px;
-    overflow: hidden;
-    z-index: 0;
-    background-image: radial-gradient(
-      circle closest-side at 20% 50%,
-      var(--light-purple) 1%,
-      #ffffff 60%
-    );
-  }
-  .container {
-    z-index: 9;
-    max-width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    position: static;
-  }
-  .container.flex {
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-    width: 1200px;
-    display: flex;
-  }
+      .section.overflow {
+        margin-top: 20px;
+        padding-top: 124px;
+        padding-bottom: 0px;
+        overflow: hidden;
+        z-index: 0;
+        background-image: radial-gradient(
+          circle closest-side at 20% 50%,
+          var(--light-purple) 1%,
+          #ffffff 60%
+        );
+      }
+      .container {
+        z-index: 9;
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        position: static;
+      }
+      .container.flex {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 1200px;
+        display: flex;
+      }
 
-  .half-side.left {
-    flex-direction: column;
-    justify-content: center;
-    width: 42%;
-    padding-right: 48px;
-    display: flex;
-  }
+      .half-side.left {
+        flex-direction: column;
+        justify-content: center;
+        width: 42%;
+        padding-right: 48px;
+        display: flex;
+      }
 
-  .label {
-    color: var(--purple);
-    letter-spacing: 0.1rem;
-    text-transform: uppercase;
-    background-color: rgba(255, 255, 255, 0.49);
-    background-image: linear-gradient(
-      to right,
-      rgba(255, 255, 255, 0.5),
-      rgba(255, 255, 255, 0.25)
-    );
-    border-radius: 70px;
-    margin-bottom: 16px;
-    padding: 10px 16px;
-    font-size: 0.85rem;
-    font-weight: 500;
-    line-height: 100%;
-    display: inline-block;
-    box-shadow: 0 3px 8px -4px rgba(185, 196, 171, 0.46);
-  }
+      .label {
+        color: var(--purple);
+        letter-spacing: 0.1rem;
+        text-transform: uppercase;
+        background-color: rgba(255, 255, 255, 0.49);
+        background-image: linear-gradient(
+          to right,
+          rgba(255, 255, 255, 0.5),
+          rgba(255, 255, 255, 0.25)
+        );
+        border-radius: 70px;
+        margin-bottom: 16px;
+        padding: 10px 16px;
+        font-size: 0.85rem;
+        font-weight: 500;
+        line-height: 100%;
+        display: inline-block;
+        box-shadow: 0 3px 8px -4px rgba(185, 196, 171, 0.46);
+      }
 
-  .section-heading {
-    color: var(--dark-purple);
-    margin-top: 16px;
-    margin-bottom: 20px;
-    font-size: 3.3rem;
-    font-weight: 600;
-    line-height: 105%;
-  }
-  .section-subheading {
-    opacity: 1;
-    color: var(--dark-text);
-    margin-top: 16px;
-    margin-bottom: 32px;
-    font-size: 1.15rem;
-    line-height: 150%;
-  }
+      .section-heading {
+        color: var(--dark-purple);
+        margin-top: 16px;
+        margin-bottom: 20px;
+        font-size: 3.3rem;
+        font-weight: 600;
+        line-height: 105%;
+      }
+      .section-subheading {
+        opacity: 1;
+        color: var(--dark-text);
+        margin-top: 16px;
+        margin-bottom: 32px;
+        font-size: 1.15rem;
+        line-height: 150%;
+      }
 
-  .feature-block {
-    background-color: rgba(255, 255, 255, 0);
-    border-radius: 3.5px;
-    align-items: center;
-    margin-top: 4px;
-    margin-top: 4px;
-    padding: 8px 24px 8px 0;
-    display: flex;
-  }
+      .feature-block {
+        background-color: rgba(255, 255, 255, 0);
+        border-radius: 3.5px;
+        align-items: center;
+        margin-top: 4px;
+        margin-top: 4px;
+        padding: 8px 24px 8px 0;
+        display: flex;
+      }
 
-  .feature-icon-wrap {
-    background-color: var(--light-purple);
-    box-shadow: none;
-    color: var(--darkest-text);
-    border-radius: 1000px;
-    flex: none;
-    justify-content: center;
-    align-items: center;
-    width: 45px;
-    height: 45px;
-    display: flex;
-  }
+      .feature-icon-wrap {
+        background-color: var(--light-purple);
+        box-shadow: none;
+        color: var(--darkest-text);
+        border-radius: 1000px;
+        flex: none;
+        justify-content: center;
+        align-items: center;
+        width: 45px;
+        height: 45px;
+        display: flex;
+      }
 
-  .feature-icon {
-    justify-content: center;
-    align-items: center;
-    width: 24px;
-    height: 24px;
-    display: flex;
-  }
+      .feature-icon {
+        justify-content: center;
+        align-items: center;
+        width: 24px;
+        height: 24px;
+        display: flex;
+      }
 
-  .feature-heading {
-    color: var(--dark-text);
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 20px;
-    font-size: 1.15rem;
-    font-weight: 400;
-    line-height: 150%;
-  }
+      .feature-heading {
+        color: var(--dark-text);
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 20px;
+        font-size: 1.15rem;
+        font-weight: 400;
+        line-height: 150%;
+      }
 
-  .half-side {
-    width: 50%;
-  }
-  .screenshot-wrap {
-    height: 920px;
-    position: relative;
-    left: 24px;
-    overflow: visible;
-  }
+      .half-side {
+        width: 50%;
+      }
+      .screenshot-wrap {
+        height: 920px;
+        position: relative;
+        left: 24px;
+        overflow: visible;
+      }
 
-  .screenshot {
-    -webkit-text-fill-color: inherit;
-    background-clip: border-box;
-    border: 1px solid #e5e3e0;
-    border-radius: 12px;
-    max-width: 940px;
-    height: auto;
-    display: block;
-    position: absolute;
-    top: 0%;
-    bottom: 0%;
-    left: 0%;
-    right: 0%;
-    overflow: hidden;
-    box-shadow: 0 11px 40px -5px rgba(75, 32, 19, 0.19);
-  }
+      .screenshot {
+        -webkit-text-fill-color: inherit;
+        background-clip: border-box;
+        border: 1px solid #e5e3e0;
+        border-radius: 12px;
+        max-width: 940px;
+        height: auto;
+        display: block;
+        position: absolute;
+        top: 0%;
+        bottom: 0%;
+        left: 0%;
+        right: 0%;
+        overflow: hidden;
+        box-shadow: 0 11px 40px -5px rgba(75, 32, 19, 0.19);
+      }
 
-  .container.flex.mob-switch {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: flex-start;
-    width: 1300px;
-  }
+      .container.flex.mob-switch {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-start;
+        width: 1300px;
+      }
 
-  .screenshot-wrap.left {
-    height: 880px;
-    left: -4%;
-  }
+      .screenshot-wrap.left {
+        height: 880px;
+        left: -4%;
+      }
 
-  .screenshot.left {
-    display: flex;
-    position: relative;
-    left: -45%;
-    right: 0;
-    bject-position: 40% 50%;
-    border-radius: 10px;
-    max-width: 940px;
-    height: auto;
-    min-height: 0;
-    max-height: none;
-    margin-right: 0;
-    padding-right: 0;
-    position: absolute;
-    top: 0%;
-    bottom: 0%;
-    left: -38%;
-    right: 0;
-    box-shadow: 0 11px 40px -5px rgba(75, 32, 19 0.19);
-  }
-  .div-block-11 {
-    margin-left: 100px;
-    animation: fade-in 1s cubic-bezier(0.48, 0.03, 0.79, 0.66) both;
-    animation-timeline: view();
-    animation-range: entry 90% cover 50%;
-    background-image: radial-gradient(
-      circle closest-side at 20% 35%,
-      var(--light-purple) 20%,
-      #ffffff 100%
-    );
-  }
+      .screenshot.left {
+        display: flex;
+        position: relative;
+        left: -45%;
+        right: 0;
+        bject-position: 40% 50%;
+        border-radius: 10px;
+        max-width: 940px;
+        height: auto;
+        min-height: 0;
+        max-height: none;
+        margin-right: 0;
+        padding-right: 0;
+        position: absolute;
+        top: 0%;
+        bottom: 0%;
+        left: -38%;
+        right: 0;
+        box-shadow: 0 11px 40px -5px rgba(75, 32, 19 0.19);
+      }
+      .div-block-11 {
+        margin-left: 100px;
+        animation: fade-in 1s cubic-bezier(0.48, 0.03, 0.79, 0.66) both;
+        animation-timeline: view();
+        animation-range: entry 90% cover 50%;
+        background-image: radial-gradient(
+          circle closest-side at 20% 35%,
+          var(--light-purple) 20%,
+          #ffffff 100%
+        );
+      }
 
-  .half-side.img {
-  }
+      .half-side.img {
+      }
 
-  img {
-    vertical-align: middle;
-    display: inline-block;
-  }
+      img {
+        vertical-align: middle;
+        display: inline-block;
+      }
 
-  @keyframes fade-in {
-    0% {
-      opacity: 0;
-      padding-top: 50px;
-    }
-    100$ {
-      opacity: 1;
-      padding-top: 0px;
-    }
-  }
-
-  .universidad.logoA img {
-    width: 140px;
-    height: auto;
-  }
-</style>
+      @keyframes fade-in {
+        0% {
+          opacity: 0;
+          padding-top: 50px;
+        }
+        100$ {
+          opacity: 1;
+          padding-top: 0px;
+        }
+      }
+    </style>
+  </div>
+</main>

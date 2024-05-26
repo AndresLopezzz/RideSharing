@@ -1,3 +1,208 @@
 ---
-
+import { AnimatedBeamDemo } from "./relations.tsx";
 ---
+
+<footer>
+  <div class="wrapper">
+    <div class="footer-inner">
+      <div class="footer_logo">
+        <div class="img-wrapper">
+          <img src="/public/New-logo.svg" alt="" />
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <h5 class="title">Conductores</h5>
+            <ul>
+              <li>
+                <a target="_blank" rel="noopener noreferrer" href=""
+                  ><span class="Typo-low">Regulacion</span></a
+                >
+              </li>
+              <li>
+                <a target="_blank" rel="noopener noreferrer" href=""
+                  ><span class="Typo-low">Soporte</span></a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h5 class="title">Recursos</h5>
+            <ul>
+              <li>
+                <a target="_blank" rel="noopener noreferrer" href=""
+                  ><span class="Typo-low">Documentos</span></a
+                >
+              </li>
+              <li>
+                <a target="_blank" rel="noopener noreferrer" href=""
+                  ><span class="Typo-low">Changelog</span></a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h5 class="title">Compañia</h5>
+            <ul>
+              <li>
+                <a target="_blank" rel="noopener noreferrer" href=""
+                  ><span class="Typo-low"
+                    ><span class="Typo-low">Contacto</span></span
+                  ></a
+                >
+              </li>
+              <li>
+                <a target="_blank" rel="noopener noreferrer" href=""
+                  ><span class="Typo-low">X(Twitter)</span></a
+                >
+              </li>
+              <li>
+                <a target="_blank" rel="noopener noreferrer" href=""
+                  ><span class="Typo-low">Privacidad</span></a
+                >
+              </li>
+              <li>
+                <a target="_blank" rel="noopener noreferrer" href=""
+                  ><span class="Typo-low">Terminos y condiciones</span></a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer-info">
+      <p class="copy-year">© 2024</p>
+      <ul class="socials">
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+  </div>
+
+  <style>
+    * {
+      outline: 0px;
+      padding: 0px;
+      margin: 0px;
+      border: 0px;
+      box-sizing: border-box;
+    }
+
+    footer {
+      max-width: 67rem;
+      margin: 0px auto;
+      padding: 0px 1.5rem;
+    }
+
+    .wrapper {
+      display: flex;
+      -webkit-box-pack: justify;
+      justify-content: space-between;
+      padding: 4rem 0px 6rem;
+      margin: 0px auto;
+      color: rgba(112, 112, 112, 0.4);
+    }
+
+    .footer-inner {
+      display: flex;
+      -webkit-box-pack: justify;
+      justify-content: space-between;
+      gap: 3.75rem;
+    }
+
+    .footer_logo {
+      position: relative;
+      width: 20px;
+      height: 22px;
+      margin-right: 70px;
+      overflow: hidden;
+    }
+
+    .img-wrapper {
+      width: 100%;
+    }
+
+    .img-wrapper img {
+      width: 20px;
+      height: 20px;
+    }
+
+    nav > ul {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 80px;
+      list-style: none;
+      margin: 4px 0px 0px auto;
+    }
+
+    nav > ul > li {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .title {
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 18px;
+      letter-spacing: -0.13px;
+      color: var(--darkest-text);
+    }
+
+    nav > ul > li > ul {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      list-style: none;
+      padding: 0px;
+      margin: 0px;
+    }
+
+    nav > ul > li > ul > li a {
+      display: inline-block;
+      color: rgba(34, 34, 34, 0.4);
+      font-weight: 400;
+      text-decoration: none;
+    }
+
+    .Typo-low {
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 18px;
+      letter-spacing: -0.13px;
+      transition: color 0.3s ease-in-out;
+    }
+
+    .Typo-low:hover {
+      color: rgb(27, 27, 27);
+    }
+
+    .footer-info {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 13px;
+      padding-top: 2px;
+    }
+
+    .copy-year {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 19px;
+      letter-spacing: -0.01px;
+    }
+
+    .social {
+      display: flex;
+      -webkit-box-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      justify-content: center;
+      gap: 6px;
+      list-style: none;
+    }
+  </style>
+</footer>
