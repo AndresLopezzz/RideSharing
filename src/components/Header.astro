@@ -1,5 +1,5 @@
 ---
-console.log("javascript");
+
 ---
 
 <header>
@@ -11,163 +11,163 @@ console.log("javascript");
     <div class="mid-nav">
       <span><a href="#">Start</a></span>
       <span><a href="#features">Features</a></span>
-      <span>About us</span>
-      <span>FAQ</span>
-    </div>
-    <div class="links-nav">
-      <button class="b1">Sign in</button>
-      <button class="b2">Sign Up</button>
+      <span><a href="#aboutus">About us</a></span>
+      <span><a href="#footer">FAQ</a></span>
+      <div class="links-nav">
+        <button class="b1">Sign in</button>
+        <button class="b2">Sign Up</button>
+      </div>
     </div>
   </div>
-</header>
 
-<style>
-  :root {
-    /*
+  <style>
+    :root {
+      /*
     Colores RideSharing
     */
-    --darkest-text: #1d1d1d;
+      --darkest-text: #1d1d1d;
 
-    --purple: #5d17eb;
-    --dark-purple: #350d85;
-    --light-purple: #d3c2f6;
-  }
-
-  header {
-    padding: 6px 4px 6px 4px;
-    margin: 10px 450px 10px 450px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    width: 90;
-    top: 0;
-    z-index: 1000;
-  }
-
-  .logo-nav {
-    margin-left: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--dark-purple);
-    font-weight: 400;
-    font-size: 1;
-  }
-
-  .logo-nav p {
-    padding-left: 8px;
-    cursor: alias;
-  }
-
-  .logo-nav img {
-    width: 48px;
-    height: auto;
-  }
-
-  .nav-menu {
-    flex: 1;
-    justify-content: space-between;
-    align-items: center;
-    display: flex;
-    position: fixed;
-    top: 10px;
-    padding: 6px 4px 6px 4px;
-    background: linear-gradient(
-      135deg,
-      rgba(255, 255, 255, 0.1),
-      rgba(255, 255, 255, 0)
-    );
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 15px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-    animation: appear 5s cubic-bezier(0.18, 0.79, 0.33, 0.98);
-  }
-
-  .mid-nav {
-    grid-column-gap: 3rem;
-    grid-row-gap: 3rem;
-    flex: 0 auto;
-    align-items: center;
-    justify-content: center;
-    margin-left: 48px;
-    margin-right: 48px;
-    display: flex;
-    text-decoration: none;
-  }
-
-  .mid-nav span a {
-    color: var(--darkest-text);
-    cursor: pointer;
-    text-decoration: none;
-    animation: filter 1s ease-in-out;
-  }
-  .mid-nav span a:active {
-    background-color: white;
-    border-radius: 20px;
-    filter: blur(3px);
-  }
-
-  .links-nav {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-  }
-
-  .links-nav button {
-    border-radius: 6px;
-    border: none;
-    width: 110px;
-    height: auto;
-    padding: 12px 20px;
-    font-size: 1rem;
-    font-family: "Graphik", Arial, Helvetica, sans-serif;
-    cursor: pointer;
-    margin-right: 8px;
-  }
-
-  .b1 {
-    background-color: rgb(0, 0, 0, 0);
-    color: var(--dark-text);
-    transition: 0.3s ease-in-out;
-    height: auto;
-    margin-right: 8px;
-    padding: 16px 20px;
-    line-height: 120%;
-  }
-
-  .b1:hover {
-    background-color: rgb(255, 255, 255, 0.35);
-  }
-
-  .b2 {
-    background-color: var(--purple);
-    background-image: linear-gradient(
-      rgba(0, 0, 0, 0) 54%,
-      rgba(53, 13, 133, 0.69)
-    );
-    color: white;
-    transition: 0.3s ease-in-out;
-  }
-
-  .b2:hover {
-    background-color: var(--purple);
-    background-image: none;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-  }
-
-  html {
-    scroll-behavior: smooth;
-  }
-
-  @keyframes appear {
-    0% {
-      transform: translateY(-10px);
+      --purple: #5d17eb;
+      --dark-purple: #350d85;
+      --light-purple: #d3c2f6;
     }
-    100 % {
-      transform: translateY(0);
+
+    header {
+      padding: 6px 4px 6px 4px;
+      margin: 10px 450px 10px 450px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      width: 90;
+      top: 0;
+      z-index: 1000;
     }
-  }
-</style>
+
+    .logo-nav {
+      margin-left: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: var(--dark-purple);
+      font-weight: 400;
+      font-size: 1;
+    }
+
+    .logo-nav p {
+      padding-left: 8px;
+      cursor: alias;
+    }
+
+    .logo-nav img {
+      width: 48px;
+      height: auto;
+    }
+
+    .nav-menu {
+      flex: 1;
+      justify-content: space-between;
+      align-items: center;
+      display: flex;
+      position: fixed;
+      top: 10px;
+      padding: 6px 4px 6px 4px;
+      background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.1),
+        rgba(255, 255, 255, 0)
+      );
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-radius: 15px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+      animation: appear 5s cubic-bezier(0.18, 0.79, 0.33, 0.98);
+    }
+
+    .mid-nav {
+      grid-column-gap: 3rem;
+      grid-row-gap: 3rem;
+      flex: 0 auto;
+      align-items: center;
+      justify-content: center;
+      margin-left: 48px;
+      margin-right: 48px;
+      display: flex;
+      text-decoration: none;
+    }
+
+    .mid-nav span a {
+      color: var(--darkest-text);
+      cursor: pointer;
+      text-decoration: none;
+      animation: filter 1s ease-in-out;
+    }
+    .mid-nav span a:active {
+      background-color: white;
+      border-radius: 20px;
+      filter: blur(3px);
+    }
+
+    .links-nav {
+      justify-content: center;
+      align-items: center;
+      display: flex;
+    }
+
+    .links-nav button {
+      border-radius: 6px;
+      border: none;
+      width: 110px;
+      height: auto;
+      padding: 12px 20px;
+      font-size: 1rem;
+      font-family: "Graphik", Arial, Helvetica, sans-serif;
+      cursor: pointer;
+      margin-right: 8px;
+    }
+
+    .b1 {
+      background-color: rgb(0, 0, 0, 0);
+      color: var(--dark-text);
+      transition: 0.3s ease-in-out;
+      height: auto;
+      margin-right: 8px;
+      padding: 16px 20px;
+      line-height: 120%;
+    }
+
+    .b1:hover {
+      background-color: rgb(255, 255, 255, 0.35);
+    }
+
+    .b2 {
+      background-color: var(--purple);
+      background-image: linear-gradient(
+        rgba(0, 0, 0, 0) 54%,
+        rgba(53, 13, 133, 0.69)
+      );
+      color: white;
+      transition: 0.3s ease-in-out;
+    }
+
+    .b2:hover {
+      background-color: var(--purple);
+      background-image: none;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    @keyframes appear {
+      0% {
+        transform: translateY(-10px);
+      }
+      100 % {
+        transform: translateY(0);
+      }
+    }
+  </style>
+</header>
