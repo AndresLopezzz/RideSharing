@@ -35,7 +35,7 @@ export function AnimatedBeamDemo() {
         <div className="flex flex-row justify-between">
           {/* Primer círculo con imagen */}
           <Circle ref={div1Ref}>
-            <img src="/imgs/logo_cuc.png" alt="" className="h-25 w-25" />
+            <img src="/imgs/logo_cuc.png" alt="" className="h-45 w-4" />
           </Circle>
 
           {/* Segundo círculo con imagen */}
