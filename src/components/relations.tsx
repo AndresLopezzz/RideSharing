@@ -31,16 +31,20 @@ export function AnimatedBeamDemo() {
       className="relative flex w-full max-w-[500px] items-center justify-center overflow-hidden rounded-lg  bg-background p-10 md:shadow-x3"
       ref={containerRef}
     >
-      <div className="flex h-full w-full flex-col items-stretch justify-between gap-10">
+      <div className="flex h-full w-full flex-col  justify-between gap-10">
         <div className="flex flex-row justify-between">
           {/* Primer círculo con imagen */}
           <Circle ref={div1Ref}>
-            <img src="/imgs/logo_cuc.png" alt="" className="h-45 w-4" />
+            <img
+              src="/imgs/logo_cuc.png"
+              alt=""
+              className="max-h-full max-w-full "
+            />
           </Circle>
 
           {/* Segundo círculo con imagen */}
           <Circle ref={div2Ref}>
-            <img src="/imgs/ExclamationTriange.svg" alt="" />
+            <img src="/imgs/Security.svg" alt="" />
           </Circle>
         </div>
       </div>
