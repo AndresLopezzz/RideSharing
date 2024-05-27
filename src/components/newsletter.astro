@@ -1,0 +1,99 @@
+---
+import InputEmail from "./nextui/input.tsx";
+---
+
+<main id="newsletter">
+  <div class="title"><h2>Te gustaría saber más?</h2></div>
+  <div class="subtitle">
+    Obtén todos las actualizaciones del proyecto antes que nadie, uniendote a
+    nuestro Newsletter.
+  </div>
+  <div class="bottomPart">
+    <div class="inputEmail">
+      <input type="email" placeholder="Ingrese su email" />
+      <div class="button">Subscribirse</div>
+    </div>
+  </div>
+
+  <style>
+    main {
+      background-color: var(--purple);
+      height: 380px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: rgb(172, 131, 255);
+      background: radial-gradient(
+        circle,
+        rgba(172, 131, 255, 1) 0%,
+        rgba(93, 23, 235, 1) 25%,
+        rgba(0, 0, 0, 1) 65%
+      );
+    }
+
+    .inputEmail {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .inputEmail input {
+      padding-left: 8px;
+      min-width: 300px;
+      min-height: 40px;
+      border-radius: 5px;
+      font-size: 1rem;
+      text-align: left;
+      border: none;
+      margin-right: 8px;
+      box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.4);
+      transition: 0.2s ease-in-out; /* Sombra interna más pronunciada */
+    }
+
+    .inputEmail input:focus {
+      outline: 1px solid grey;
+      box-shadow:
+        inset 0px 2px 5px rgba(0, 0, 0, 0.2),
+        0px 5px 10px rgba(0, 0, 0, 0.681); /* Sombra interna mantenida */
+    }
+
+    .title {
+      font-weight: 700;
+      font-size: 2rem;
+      color: white;
+      margin-bottom: 16px;
+    }
+
+    .subtitle {
+      font-size: 1rem;
+      margin-bottom: 16px;
+      color: white;
+    }
+
+    .bottomPart {
+      display: flex;
+      flex-direction: row;
+      margin-top: 8px;
+    }
+
+    .button {
+      padding: 8px 24px 8px;
+      border-radius: 5px;
+      font-size: 1rem;
+      background: rgb(128, 128, 128);
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: s ease-in-out;
+    }
+
+    .button:hover {
+      background-color: rgb(202, 202, 202);
+    }
+
+    .button:active {
+      background-color: rgb(10, 10, 10);
+    }
+  </style>
+</main>

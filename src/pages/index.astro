@@ -5,6 +5,8 @@ import Hero from "../components/Hero.astro";
 import Features from "../components/Features.astro";
 import Footer from "../components/Footer.astro";
 import AboutUs from "@/components/aboutUs.astro";
+import Newsletter from "@/components/newsletter.astro";
+import { TextRevealDemo } from "@/components/text-revealCom.tsx";
 ---
 
 <Layout title="Ride-Sharing">
@@ -14,10 +16,12 @@ import AboutUs from "@/components/aboutUs.astro";
     <div class="hero-wrap">
       <Hero />
     </div>
+    <TextRevealDemo client:load />
     <div class="features-wrap">
       <Features />
     </div>
     <AboutUs />
+    <Newsletter />
   </main>
   <Footer />
 </Layout>
